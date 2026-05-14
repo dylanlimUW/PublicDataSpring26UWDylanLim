@@ -25,7 +25,7 @@
 
     //Scales - note: band and linear
         const xScale = d3.scaleBand()
-                        .domain(data.map(d => d.iPhone_Model))
+                        .domain(salesByModel.map(d => d.iPhone_Model))
                         .range([margin, width - margin])
                         .paddingInner(.1);
         
@@ -55,10 +55,10 @@
             .data(salesByModel) 
             .enter()
             .append("rect")
-            .attr("x", d => xScale(d.model)) 
-            .attr("y", d => yScale(d.quantity)) 
+            .attr("x", d => xScale(d.iPhone_Model)) 
+            .attr("y", d => yScale(d.Quantity)) 
             .attr("width", xScale.bandwidth()) // note this is specific to using the bandscale as the scale calculates padding
-            .attr("height", d => (height-margin) - yScale(d.quantity))
+            .attr("height", d => (height-margin) - yScale(d.Quantity))
             .attr("fill", "pink");
         
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Binding Data Example</title>
+        <script src= "https://d3js.org/d3.v7.min.js"></script>
+        <style type="text/css">
+            /*NOTE: This is how you comment in CSS!*/
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+        const data = [10, 20, 30, 40, 50];
+        //const data = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+        //const data = [15, 25];
+ 
+        d3.select("body")
+          .selectAll("p")
+          .data(data)
+          .enter()
+          .append("p")
+          .text("We are binding data!");//don't forget the ;
+        //.text(d => d); // Note: you may have seen: .text(function(d) {return d;});
+        //.text(d => "The number is " + d);
+        //.style("color", "red");
+
+            //NOTE: This is how you comment in JavaScript!
+            
+            /*NOTE: 
+            You can also comment like this,
+            if your comment is multiple lines 
+            long!*/
+
+        </script>
+    </body>
+</html>

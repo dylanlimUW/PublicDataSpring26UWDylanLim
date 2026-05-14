@@ -40,6 +40,13 @@
                     .attr("width", width)
                     .attr("height", height);
 
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", margin / 2)
+            .attr("text-anchor", "middle")
+            .style("font-size", "20px")
+            .text("iPhone Sales by Model");
+
                     
     //Axes - create axes
         const bottomAxis = d3.axisBottom()
@@ -59,7 +66,7 @@
             .attr("y", d => yScale(d.Quantity)) 
             .attr("width", xScale.bandwidth()) // note this is specific to using the bandscale as the scale calculates padding
             .attr("height", d => (height-margin) - yScale(d.Quantity))
-            .attr("fill", "pink");
+            .attr("fill", "black");
         
 
     //Axes - call axes

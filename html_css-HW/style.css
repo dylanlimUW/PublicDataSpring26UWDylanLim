@@ -1,0 +1,42 @@
+/* Global styling */
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  padding: 1em;
+}
+/* Header styling */
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3em;
+  margin: 0.25em 0;
+  color:red;
+}
+/* Subheader styling */
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  margin: 0.25em 0;
+  color:blue;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin: 0.25em 0;
+  font-weight: bold;
+}
+/* Paragraph styling */
+p {
+  font-size: 1em;
+  color: black;
+}
+/* Image styling */
+img {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+/* Review text (body paragraph) styling */
+.review-text {
+  color:black;
+  font-size: 30px;
+}

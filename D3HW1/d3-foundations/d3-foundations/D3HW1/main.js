@@ -14,7 +14,7 @@
         });
         
         //Group sales by iPhone model and sum the quantity for each model
-        const salesByModel = d3.rollup(
+        const salesByModel = d3.rollups(
             data,
             v => d3.sum(v, d => d.Quantity),
             d => d.iPhone_Model

@@ -25,7 +25,7 @@
 
     //Scales - note: band and linear
         const xScale = d3.scaleBand()
-                        .domain(data.map(d => d.day))
+                        .domain(data.map(d => d.iPhone_Model))
                         .range([margin, width - margin])
                         .paddingInner(.1);
         

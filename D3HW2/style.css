@@ -1,0 +1,23 @@
+.axis path, 
+            .axis line {
+                stroke: midnightblue;
+            }
+
+            .axis text {
+                font-family: sans-serif;
+                font-size: 10px;
+                fill: midnightblue;
+            }
+
+            .line {
+                fill: none;
+                stroke-width: 2px;
+            }
+
+            .quantity-line {
+                stroke: steelblue;
+            }
+
+            .orders-line {
+                stroke: pink;
+            }

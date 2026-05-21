@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG Shapes</title>
+        <script src= "https://d3js.org/d3.v7.min.js"></script>
+        <style type="text/css">
+            /*TBD*/
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            //1. Create our SVG element
+            const svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", 500) 
+                        .attr("height", 500)
+                        .style("background-color", "yellow");
+
+            //2. Make shapes and to SVG.
+            const rectangle = svg.append("rect") 
+                            .attr("x", 100)
+                            .attr("y", 100)
+                            .attr("width", 50)
+                            .attr("height", 70)
+                            //.attr("rx", 15)//corner curve radius x (optional)
+                            //.attr("ry", 15);//corner curve radius y (optional)
+                            //.attr("transform", "translate(0, 100)");
+                            //.attr("transform", "translate(0, 200)");
+                            //.attr("transform", "translate(0, 300)")
+                            //.attr("transform", "translate(300)");
+                            //.attr("transform", "translate(150,150)"); //translate moves by x and y 
+
+            const circle = svg.append("circle")  
+                            .attr("cx", 200)
+                            .attr("cy", 300)
+                            .attr("r", 10)
+                            .attr("fill", "green");
+                            //.attr("transform", "scale(.5)");//scale is attributed to the whole coordinate system of the shape
+                            //.attr("transform", "scale(1.5)");
+                            //.attr("transform", "scale(2, .5)");
+                            //.attr("transform", "scale(.5, 1.5)");
+
+
+            const ellipse = svg.append("ellipse")  
+                            .attr("cx", 400)
+                            .attr("cy", 400)
+                            .attr("rx", 30)
+                            .attr("ry", 100)
+                            .attr("fill", "orange");
+                            //.attr("transform", "rotate(45)"); //this rotates the shape by degrees. if one number is provided it rotates it around the coordinate system. you can provide an x and y for it to rotate around in this order: (a, x, y)
+                            //.attr("transform", "rotate(90, 400, 400)");
+
+            /* NOTE: an ellipse is similar to a circle but needs 
+            an rx and ry, which would be different #s 
+            (play around with these to see how this affects the shape)*/
+
+            const line = svg.append("line") 
+                                .attr("x1", 5) 
+                                .attr("y1", 5)
+                                .attr("x2", 200)
+                                .attr("y2", 200)
+                                .attr("stroke", "blue")
+                                .attr("stroke-width", "4px");
+
+            // NOTE: each line needs an x1 y1 and an x2 y2 (or the xy coordinates of the first point and the second point). It should also have a stroke, and stroke-width.
+
+            const text = svg.append("text") 
+                                .attr("x", 350)
+                                .attr("y", 50)
+                                .attr("font-size", "16px")
+                                .attr("fill", "red")
+                                //.attr("text-anchor", "end")
+                                //.attr("transform", "rotate(-90, 350, 50)")
+                                .text("hello world");    
+
+        </script>
+    </body>
+</html>

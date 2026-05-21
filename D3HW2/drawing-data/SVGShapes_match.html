@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Match the Shapes-Optional Exercise!</title>
+        <script src= "https://d3js.org/d3.v7.min.js"></script>
+        <style type="text/css">
+            /*TBD*/
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        //Consider: How would we move the red shape to be where the grey one is? How would we move the grey shape to line up with the red one?
+        //And/or: try moving the rectangles around, adding transforms (translate, scale, rotate), using negatives & etc. t0 see what happens)
+            
+        //1. Create our SVG element
+            const svg = d3.select("body")
+                            .append("svg")
+                            .attr("width", 800) 
+                            .attr("height", 800);
+
+            //2. Make shapes and to SVG with transform translate and rotate
+            const rect = svg.append("rect") 
+                            .attr("x", 100)
+                            .attr("y", 100)
+                            .attr("width", 100)
+                            .attr("height", 150)
+                            .attr("fill", "red")
+                            .attr("opacity", 0.5)
+                            .attr("transform", "rotate(45, 200, 200)");
+
+             const rect2 = svg.append("rect") 
+                            .attr("x", 400)
+                            .attr("y", 600)
+                            .attr("width", 100)
+                            .attr("height", 150)
+                            .attr("opacity", 0.5)
+                            //.attr("transform", "translate(x,y)rotate(a, x, y)");
+                     
+
+        </script>
+    </body>
+</html>

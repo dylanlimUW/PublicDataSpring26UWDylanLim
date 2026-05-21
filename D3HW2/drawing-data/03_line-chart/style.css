@@ -1,0 +1,19 @@
+.axis path, 
+            .axis line{
+                stroke: midnightblue;
+            }
+
+            .axis text{
+                font-family: sans-serif;
+                font-size: 10px;
+                fill: midnightblue;
+                }
+            
+            .line {
+                fill: none; 
+                stroke: steelblue; 
+                stroke-width: 2px;
+                /*stroke-dasharray: 4 3;*/ /*dashes and gaps*/
+                /*stroke-dasharray: 4 3 2 1;*/
+  
+            }

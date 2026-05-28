@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HW Template</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>iPhone Sales Over Time</h1>
+        <p>This chart shows quantity sold over time, number of orders, and average price of iPhones from January 2025 to April 2025. <br>
+        The left y-axis represents quantity sold and number of orders, while the right y-axis represents average price. <br>
+        The x-axis represents time. You can use the dropdown menu to select which metrics to display on the graph.
+        </p>
+
+        <label for="metricSelect">Choose graph variant:</label>
+        <select id="metricSelect">
+            <option value="quantity">Only Quantity Sold</option>
+            <option value="orders">Only Number of Orders</option>
+            <option value="avgPrice">Only Average Price</option>\
+            <option value="all">All Metrics</option>
+        </select>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="./main.js"></script>       
+    </body>
+</html>

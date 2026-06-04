@@ -41,6 +41,13 @@ body {
                 margin-bottom: 25px;
          }
 
+/* subparagraph styling */
+         .subparagraph {
+                font-size: 16px;
+                margin-bottom: 20px;
+                color: #555;
+         }
+
 /* image container */
          .viz {
                 text-align: center;
